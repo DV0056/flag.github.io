@@ -15,9 +15,12 @@
 }
 .container {
     width: 50%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     position: relative;
-    height: 240px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    z-index: 999;
 }
 .btn1 {
     background-color: greenyellow;
@@ -26,4 +29,89 @@
     margin-bottom: 4px;
     border: 1px solid #000;
     cursor: pointer;
+}
+.redbox, .greenbox, .whitebox {
+    width: 67%;
+    height: 54px;
+cursor: pointer;
+    /* background-color: #FF9933; */
+    border: 1px solid #000;
+    border-left: 0;
+    text-align: center;
+   
+}
+
+.lastfill{
+    cursor: pointer;
+
+}
+/* .greenbox{
+    background-color: #138808;
+} */
+.whitebox{
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+}
+
+
+.line {
+    width: 6px;
+    border: 1px solid #545151;
+    background-color: #545151;
+    height: 370px;
+    position: relative;
+}
+.head {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.fa-dharmachakra:before{
+    font-size: 31px;
+    color: #000080;
+}
+i{
+    margin-top: 10px;
+}
+
+.last-box {
+    border: 1px solid #000;
+    width: 30%;
+    position: absolute;
+    top: 372px;
+    padding: 17px;
+    left: 63px;
+    cursor: pointer;
+}
+.text1{
+font-size: 20px;
+text-align: center;
+margin-left: -95px;
+font-weight: 600;
+position: relative;
+z-index: 999;
+padding: 18px;
+
+}
+#iconshow{
+  display: none;
+  /* width: 100%; */
+}
+#fi2{
+    display: block;
+}
+
+.last-box p{
+    margin: 0;
+}
+#backimg{
+    background-image: url(download.png);
+    width: 99%;
+    position: absolute;
+    height: 650px;
+    top: 0;
+    z-index: 0;
+    display: none;
+
 }

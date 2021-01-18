@@ -5,18 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link href="script.js" type="text/javascript"> -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
     <div>
-        <button class="btn1">click here to change the position</button>
-        <div class="container">
-       
-        </div>
-    </div>
-</body>
-<script>
+        <div><p class="text1" id="text2">Click and fill the color</p></div>
+        <div class="container ">
 
-</script>
+            <div class="line"></div>
+            <div class="head">
+            <div class="redbox" id="red1" titile="add color"><p>Fill 1</p></div>
+            <div class="whitebox" id="icon1"> <P id="fi2">Fill 2</P>
+          <span id="iconshow"> <i class='fas fa-dharmachakra' ></i></span>
+            </div>
+            <div class="greenbox" id="green1"><p>Fill 3</p></div>
+        </div>
+        <div class="last-box" id="last1"><p>Fill 4</p></div>
+        </div>
+        </div>
+        <div id="backimg"></div>
+    </div>
+    <script>
+        
+        function redfill(){
+            // document.getElementsByClassName("redbox").style.backgroundcolor='#ccc';
+            document.getElementById('red1').style.backgroundColor="#FF9933";
+            document.getElementById('red1').innerHTML="";
+        }
+        function greenfill(){
+          var thirdbox= document.getElementById('green1');
+          thirdbox.style.backgroundColor="#138808";
+          document.getElementById('green1').innerHTML="";
+        }
+
+        function whitefill(){
+            // alert ('hello');
+  
+            var element = document.getElementById('iconshow');
+  element.style.display="block";
+
+  var element2 = document.getElementById('fi2');
+  element2.style.display="none";
+        }
+
+        // function ashok(){
+        //     document.getElementById('icon1').innerHTML=""
+        // }
+
+        function lastfill(){
+            document.getElementById('last1').style.backgroundColor="#ccc";
+            document.getElementById('text2').innerHTML='Happy Republic day!';
+            document.getElementById('text2').style.color="#db0030";
+            document.getElementById('text2').style.fontSize="25px";
+            document.getElementById('text2').style.backgroundColor="#fff";
+            document.getElementById('last1').innerHTML="";
+            var a=document.getElementById('backimg');
+            a.style.display="block";
+        }
+        red1.addEventListener("click",redfill);
+        green1.addEventListener("click",greenfill);
+        icon1.addEventListener("click",whitefill);
+        last1.addEventListener("click",lastfill);
+
+   
+        
+    </script>
+</body>
+
+
 </html>
